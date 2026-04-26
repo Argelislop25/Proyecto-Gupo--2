@@ -1,4 +1,4 @@
-/*Estilos generales del cuerpo*/
+Estilos generales del cuerpo
 body {
     font-family: Arial, sans-serif;
     font-size:14px ;
@@ -55,4 +55,96 @@ header {
     float: left;
     width:  50px;
     margin-right: 10px;
+}
+
+
+/* =========================================
+   ESTILOS DE ARGENIS - SECCIÓN TUTORIALES
+   ========================================= */
+
+/* 1. Fondo gris y contenedor de tu columna */
+.column:nth-child(3) { 
+    background-color: #f4f4f7; /* El gris profesional que pediste */
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* 2. Titulo de tu sección */
+.column h2 {
+    color: #1d1d1f;
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 3. Ajuste de tu lista para que sea "acostada" */
+.Lista-tutoriales {
+    list-style: none; /* Quitamos los puntos */
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Las tarjetas van una debajo de otra */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+/* 4. Cada "Link" se convierte en una tarjeta horizontal (acostada) */
+.Lista-tutoriales li a {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    min-height: 100px; /* Altura de la tarjeta acostada */
+}
+
+.Lista-tutoriales li a:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 5. Creamos un espacio para la imagen dentro de la tarjeta con CSS */
+/* Como no tienes <img> en el HTML original dentro del <a>, 
+   usaremos un truco de CSS para poner una imagen de fondo a la izquierda */
+.Lista-tutoriales li a::before {
+    content: "";
+    flex: 0 0 120px; /* Ancho de la imagen "acostada" */
+    height: 100px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+}
+
+/* Imágenes específicas para cada tutorial (reemplaza con tus fotos) */
+.Lista-tutoriales li:nth-child(1) a::before { background-image: url(/imagenes/iphone\ 17\ 1.png); }
+.Lista-tutoriales li:nth-child(2) a::before { background-image: url(/imagenes/17\ iphone\ 2.png); }
+.Lista-tutoriales li:nth-child(3) a::before { background-image: url(/imagenes/iphone\ 17\ 3.png); }
+
+/* 6. Estilo del texto dentro de la tarjeta */
+.Lista-tutoriales li a {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-right: 15px;
+}
+
+/* 7. Tu botón de "Ver más" */
+.btn-leer-mas {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-leer-mas:hover {
+    background-color: #005bb7;
 }

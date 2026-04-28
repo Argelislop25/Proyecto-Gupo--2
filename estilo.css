@@ -232,47 +232,103 @@ header {
     max-width: 800px;
 }
 
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 15px;
+/* Estilos principales del footer (Fondo oscuro tech) */
+.site-footer-v2 {
+    background-color: #0d1117; /* El color oscuro del fondo de tu imagen */
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(77, 166, 255, 0.1);
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
 }
-.footer-link {
-    color: #4da6ff; /* Azul tecnológico */
+
+/* Contenedor Flexbox para alinear marca a la izq. y enlaces a la der. */
+.footer-inner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Clave para mover los extremos */
+    align-items: center; /* Alinea verticalmente */
+    flex-wrap: wrap; /* Para móviles */
+    gap: 30px;
+}
+
+/* Estilos para el logo y branding (Izquierda) */
+.footer-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo-img {
+    height: 120px; /* Ajusta el tamaño de tu imagen aquí */
+    width: auto;
+    border-radius: 50%; /* Mantiene la forma circular del logo */
+    border: 2px solid #4da6ff; /* Un sutil anillo azul tech */
+    box-shadow: 0 0 15px rgba(77, 166, 255, 0.3);
+}
+
+.branding-text h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.branding-text p {
+    margin: 5px 0 0;
+    color: #8b949e;
+    font-size: 0.9rem;
+}
+
+/* Estilos para la navegación (Derecha) */
+.footer-navigation-v2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-navigation-v2 a {
+    color: #4da6ff; /* Azul tecnológico para los links */
     text-decoration: none;
     font-weight: 600;
-    font-size: 1 rem;
-    transition: all 0.3s ease;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.footer-link:hover {
+.footer-navigation-v2 a:hover {
     color: #ffffff;
-    text-shadow: 0 0 10px #4da6ff;
+    text-shadow: 0 0 10px #4da6ff; /* Efecto de brillo tech */
     transform: translateY(-2px);
 }
-.footer-divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(77, 166, 255, 0.5), transparent);
-    margin: 15px 0;
-}
 
-.footer-tag {
-    color: rgba(255, 255, 255, 0.6);
+/* Parte baja del footer (Copyright) */
+.footer-bottom-v2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #6e7681;
     font-size: 0.85rem;
-    margin: 0;
 }
 
-/* Responsivo para celulares */
-@media (max-width: 600px) {
-    .footer-nav {
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-inner-wrapper {
+        flex-direction: column; /* Apila los elementos */
+        text-align: center;
+    }
+    
+    .footer-branding {
+        flex-direction: column;
+    }
+    
+    .footer-navigation-v2 ul {
         flex-direction: column;
         gap: 15px;
-    }
-    .glass-container {
-        width: 90%;
-        padding: 20px;
     }
 }

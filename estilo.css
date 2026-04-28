@@ -13,6 +13,18 @@ body {
     display: flex;
     justify-content: center; /* Centra el menú horizontalmente */
 }
+.glass-container {
+    background: rgba(13, 17, 23, 0.75); /* Fondo oscuro translúcido */
+    backdrop-filter: blur(12px); /* Efecto de desenfoque del fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 60px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+}
 
 /* Lista de navegación */
 .nav-list {

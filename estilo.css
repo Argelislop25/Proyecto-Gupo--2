@@ -6,12 +6,24 @@ body {
     padding: 0;
 }
 
-/* Contenedor principal del menú */
+/* Contenedor principal del menú - Header*/
 .navbar {
     background-color: #2c3e50;
     padding: 1rem;
     display: flex;
     justify-content: center; /* Centra el menú horizontalmente */
+}
+.glass-container {
+    background: rgba(13, 17, 23, 0.75); /* Fondo oscuro translúcido */
+    backdrop-filter: blur(12px); /* Efecto de desenfoque del fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 60px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
 }
 
 /* Lista de navegación */
@@ -74,7 +86,7 @@ body {
         font-size: 1.5rem;
     }
 }
-
+/* Fien de Header */
 
 
 /*Estilos para el contenedor*/
@@ -221,7 +233,10 @@ header {
     background-color: #005bb7;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/EduardoRama
 
 /* ESTILOS DE LA SECCION GRID */
 
@@ -273,11 +288,15 @@ header {
     padding: 10px;
 }
 
+<<<<<<< HEAD
 
 
 
 /* CSS CAMBIOS FOOTHER EDUARDO*/
 
+=======
+/* Inicio CSS para el Footer*/
+>>>>>>> origin/EduardoRama
 .footer-espacio-tech {
     width: 100%;
     min-height: 400px;
@@ -304,6 +323,7 @@ header {
     max-width: 800px;
 }
 
+<<<<<<< HEAD
 .footer-nav {
     display: flex;
     justify-content: center;
@@ -318,8 +338,111 @@ header {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+=======
+/* Estilos principales del footer (Fondo oscuro tech) */
+.site-footer-v2 {
+    background-color: #0d1117; /* El color oscuro del fondo de tu imagen */
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(77, 166, 255, 0.1);
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
 }
 
+/* Contenedor Flexbox para alinear marca a la izq. y enlaces a la der. */
+.footer-inner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Clave para mover los extremos */
+    align-items: center; /* Alinea verticalmente */
+    flex-wrap: wrap; /* Para móviles */
+    gap: 30px;
+}
+
+/* Estilos para el logo y branding (Izquierda) */
+.footer-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo-img {
+    height: 120px; /* Ajusta el tamaño de tu imagen aquí */
+    width: auto;
+    border-radius: 50%; /* Mantiene la forma circular del logo */
+    border: 2px solid #4da6ff; /* Un sutil anillo azul tech */
+    box-shadow: 0 0 15px rgba(77, 166, 255, 0.3);
+}
+
+.branding-text h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.branding-text p {
+    margin: 5px 0 0;
+    color: #8b949e;
+    font-size: 0.9rem;
+}
+
+/* Innicio Estilos para el Footer */
+.footer-navigation-v2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-navigation-v2 a {
+    color: #4da6ff; /* Azul tecnológico para los links */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.footer-navigation-v2 a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4da6ff; /* Efecto de brillo tech */
+    transform: translateY(-2px);
+}
+
+/* Parte baja del footer (Copyright) */
+.footer-bottom-v2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #6e7681;
+    font-size: 0.85rem;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-inner-wrapper {
+        flex-direction: column; /* Apila los elementos */
+        text-align: center;
+    }
+    
+    .footer-branding {
+        flex-direction: column;
+    }
+    
+    .footer-navigation-v2 ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+>>>>>>> origin/EduardoRama
+}
+/* Fin CSS para el Footer*/
+
+<<<<<<< HEAD
 .footer-link:hover {
     color: #ffffff;
     text-shadow: 0 0 10px #4da6ff;
@@ -348,3 +471,5 @@ header {
         padding: 20px;
     }
 }
+=======
+>>>>>>> origin/EduardoRama

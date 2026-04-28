@@ -416,3 +416,47 @@ header {
         gap: 15px;
     }
 }
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+.footer-link {
+    color: #4da6ff; /* Azul tecnológico */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1 rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4da6ff;
+    transform: translateY(-2px);
+}
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(77, 166, 255, 0.5), transparent);
+    margin: 15px 0;
+}
+
+.footer-tag {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .glass-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

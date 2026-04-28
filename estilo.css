@@ -205,3 +205,55 @@ header {
 .btn-leer-mas:hover {
     background-color: #005bb7;
 }
+
+
+
+/* ESTILOS DE LA SECCION GRID */
+
+/* Estilos para los Grid Items de Argelis */
+.row {
+    margin-top: 30px;
+    display: flex; /* Asegura que se vean alineados */
+    justify-content: space-between;
+}
+
+.card-detalles {
+    background: #ffffff;
+    border: 1px solid #e1e1e3;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease; /* Para el efecto cool */
+    height: 100%; /* Para que todas midan lo mismo */
+}
+
+/* Efecto al pasar el mouse */
+.card-detalles:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #0071e3;
+}
+
+.card-detalles .emoji {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-detalles h4 {
+    font-size: 1.2rem;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-detalles p {
+    font-size: 0.9rem;
+    color: #6e6e73;
+    line-height: 1.4;
+}
+
+/* Ajuste para que las columnas no se peguen */
+.column {
+    padding: 10px;
+}

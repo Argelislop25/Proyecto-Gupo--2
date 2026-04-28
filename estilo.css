@@ -67,7 +67,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
 }
 /*Encabezado principal*/
 header {
@@ -82,7 +82,7 @@ header {
     width: 30%;
     margin: 1.66%;
     padding: 10px;
-    background-color:#e2e2e2;
+    background-color:#f4f4f7;
 }
 
 .img-resena {
@@ -256,4 +256,80 @@ header {
 /* Ajuste para que las columnas no se peguen */
 .column {
     padding: 10px;
+}
+
+
+
+
+/* CSS CAMBIOS FOOTHER EDUARDO*/
+
+.footer-espacio-tech {
+    width: 100%;
+    min-height: 400px;
+    /* Usamos tu imagen de fondo */
+    /* background: url('/imagenes/footerEspacioTech.png') no-repeat center center; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Lo posiciona en la parte baja */
+    padding-bottom: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glass-container {
+    background: rgba(13, 17, 23, 0.75); /* Fondo oscuro translúcido */
+    backdrop-filter: blur(12px); /* Efecto de desenfoque del fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 60px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+.footer-link {
+    color: #4da6ff; /* Azul tecnológico */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1 rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4da6ff;
+    transform: translateY(-2px);
+}
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(77, 166, 255, 0.5), transparent);
+    margin: 15px 0;
+}
+
+.footer-tag {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .glass-container {
+        width: 90%;
+        padding: 20px;
+    }
 }

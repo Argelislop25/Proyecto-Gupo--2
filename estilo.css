@@ -38,6 +38,12 @@ body {
 }
 
 /* Estilos para que la cabecera se vea perfecta */
+.main-header {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #0d1117; /* Un color oscuro que combine con el diseño tech */
+}
 
 .header-container {
     max-width: 1200px; /* Ancho máximo para que no se estire demasiado en pantallas gigantes */
@@ -52,6 +58,15 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
 }
 
+/* Estilo para el texto opcional sobre la imagen */
+.header-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
 
 /* Ajuste para móviles */
 @media (max-width: 768px) {

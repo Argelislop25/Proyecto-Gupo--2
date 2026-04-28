@@ -50,6 +50,12 @@ body {
 }
 
 /* Estilos para que la cabecera se vea perfecta */
+.main-header {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #0d1117; /* Un color oscuro que combine con el diseño tech */
+}
 
 .header-container {
     max-width: 1200px; /* Ancho máximo para que no se estire demasiado en pantallas gigantes */
@@ -64,6 +70,15 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
 }
 
+/* Estilo para el texto opcional sobre la imagen */
+.header-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
 
 /* Ajuste para móviles */
 @media (max-width: 768px) {
@@ -79,7 +94,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
 }
 /*Encabezado principal*/
 header {
@@ -94,7 +109,7 @@ header {
     width: 30%;
     margin: 1.66%;
     padding: 10px;
-    background-color:#e2e2e2;
+    background-color:#f4f4f7;
 }
 
 .img-resena {
@@ -218,6 +233,63 @@ header {
     background-color: #005bb7;
 }
 
+
+/* ESTILOS DE LA SECCION GRID */
+
+/* Estilos para los Grid Items de Argelis */
+.row {
+    margin-top: 30px;
+    display: flex; /* Asegura que se vean alineados */
+    justify-content: space-between;
+}
+
+.card-detalles {
+    background: #ffffff;
+    border: 1px solid #e1e1e3;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease; /* Para el efecto cool */
+    height: 100%; /* Para que todas midan lo mismo */
+}
+
+/* Efecto al pasar el mouse */
+.card-detalles:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #0071e3;
+}
+
+.card-detalles .emoji {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-detalles h4 {
+    font-size: 1.2rem;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-detalles p {
+    font-size: 0.9rem;
+    color: #6e6e73;
+    line-height: 1.4;
+}
+
+/* Ajuste para que las columnas no se peguen */
+.column {
+    padding: 10px;
+}
+
+
+
+
+/* CSS CAMBIOS FOOTHER EDUARDO*/
+
+
 .footer-espacio-tech {
     width: 100%;
     min-height: 400px;
@@ -244,6 +316,7 @@ header {
     max-width: 800px;
 }
 
+<<<<<<< HEAD
 /* Estilos principales del footer (Fondo oscuro tech) */
 .site-footer-v2 {
     background-color: #0d1117; /* El color oscuro del fondo de tu imagen */
@@ -343,4 +416,49 @@ header {
         flex-direction: column;
         gap: 15px;
     }
+=======
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+.footer-link {
+    color: #4da6ff; /* Azul tecnológico */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1 rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4da6ff;
+    transform: translateY(-2px);
+}
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(77, 166, 255, 0.5), transparent);
+    margin: 15px 0;
+}
+
+.footer-tag {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .glass-container {
+        width: 90%;
+        padding: 20px;
+    }
+>>>>>>> Cambios-ARG
 }

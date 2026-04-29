@@ -78,7 +78,7 @@ body {
     width: 90%;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #f4f4f7;
 }
 /*Encabezado principal*/
 header {
@@ -93,7 +93,7 @@ header {
     width: 30%;
     margin: 1.66%;
     padding: 10px;
-    background-color:#e2e2e2;
+    background-color:#f4f4f7;
 }
 
 .img-resena {
@@ -230,12 +230,12 @@ header {
 
 .card-detalles {
     background: #ffffff;
-    border: 1px solid #e1e1e3;
+    border: 1px solid #7474f0;
     border-radius: 20px;
     padding: 25px;
     text-align: center;
     transition: all 0.3s ease; /* Para el efecto cool */
-    height: 100%; /* Para que todas midan lo mismo */
+    height: 70%; /* Para que todas midan lo mismo */
 }
 
 /* Efecto al pasar el mouse */
@@ -265,7 +265,7 @@ header {
 }
 
 /* Ajuste para que las columnas no se peguen */
-.column {
+.column1 {
     padding: 10px;
 }
 
@@ -469,16 +469,35 @@ header {
     text-align: center;
 }
 /*Columnas flotantes*/
-.column {
+.column2 {
     float: left;
     width: 30%;
     margin: 1.66%;
     padding: 10px;
-    background-color:#e2e2e2;
+    background-color:#f4f4f7;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .row {
         flex-direction: column;
     }
+}
+*/
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Apila los elementos */
+        text-align: center;
+    }
+    
+   .row {
+        flex-direction: column;
+    }
+    
+   .row ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
 }

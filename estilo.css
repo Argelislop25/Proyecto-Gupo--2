@@ -175,7 +175,6 @@ header {
 .Lista-tutoriales li a {
     display: flex;
     align-items: center;
-    background-color: #ffffff;
     text-decoration: none;
     color: #333;
     border-radius: 12px;
@@ -238,19 +237,20 @@ header {
 
 /* Estilos para los Grid Items de Argelis */
 .row {
-    margin-top: 30px;
+    margin-top: 35px;
     display: flex; /* Asegura que se vean alineados */
     justify-content: space-between;
+    
 }
 
 .card-detalles {
     background: #ffffff;
-    border: 1px solid #e1e1e3;
+    border: 1px solid #8d8dfe;
     border-radius: 10px;
-    padding: 25px;
+    padding: 35px;
     text-align: center;
-    transition: all 0.3s ease; /* Para el efecto cool */
-    height: 80%; /* Para que todas midan lo mismo */
+    transition: all 0.3s ease; 
+    height: 70%; 
 }
 
 /* Efecto al pasar el mouse */
@@ -280,8 +280,8 @@ header {
 }
 
 /* Ajuste para que las columnas no se peguen */
-.column {
-    padding: 8 px;
+.column1 {
+    padding: 2%;
 }
 
 /* Inicio CSS para el Footer*/

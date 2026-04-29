@@ -141,7 +141,7 @@ header {
 .column h2 {
     color: #1d1d1f;
     font-family: 'Segoe UI', sans-serif;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #f4f4f7;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -444,5 +444,41 @@ header {
     .glass-container {
         width: 90%;
         padding: 20px;
+    }
+}
+
+/* CSS DE ROSA */
+/*Estilos para el contenedor*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size:14px ;
+    margin: 0;
+    padding: 0;
+}
+/*Encabezado principal*/
+header {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+/*Columnas flotantes*/
+.column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    padding: 10px;
+    background-color:#e2e2e2;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
     }
 }

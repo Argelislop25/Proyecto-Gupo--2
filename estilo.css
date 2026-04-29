@@ -246,11 +246,11 @@ header {
 .card-detalles {
     background: #ffffff;
     border: 1px solid #e1e1e3;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 25px;
     text-align: center;
     transition: all 0.3s ease; /* Para el efecto cool */
-    height: 100%; /* Para que todas midan lo mismo */
+    height: 80%; /* Para que todas midan lo mismo */
 }
 
 /* Efecto al pasar el mouse */
@@ -281,20 +281,20 @@ header {
 
 /* Ajuste para que las columnas no se peguen */
 .column {
-    padding: 10px;
+    padding: 8 px;
 }
 
 /* Inicio CSS para el Footer*/
 .footer-espacio-tech {
     width: 100%;
-    min-height: 400px;
+    min-height: 100px;
     /* Usamos tu imagen de fondo */
     /* background: url('/imagenes/footerEspacioTech.png') no-repeat center center; */
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Lo posiciona en la parte baja */
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -307,7 +307,7 @@ header {
     padding: 30px 60px;
     text-align: center;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-    width: 80%;
+    width: 50%;
     max-width: 800px;
 }
 

@@ -5,6 +5,74 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Contenedor principal del menú */
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+}
+.glass-container {
+    background: rgba(13, 17, 23, 0.75); /* Fondo oscuro translúcido */
+    backdrop-filter: blur(12px); /* Efecto de desenfoque del fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 60px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Lista de navegación */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Espacio entre los elementos */
+}
+
+/* Estilos de los enlaces */
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.nav-list li a:hover {
+    color: #3498db;
+}
+
+/* Estilos para que la cabecera se vea perfecta */
+
+.header-container {
+    max-width: 1200px; /* Ancho máximo para que no se estire demasiado en pantallas gigantes */
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .header-overlay h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
 /*Estilos para el contenedor*/
 .container {
     width: 90%;
@@ -55,4 +123,362 @@ header {
     float: left;
     width:  50px;
     margin-right: 10px;
+}
+
+
+/* =========================================
+   ESTILOS DE ARGENIS - SECCIÓN TUTORIALES
+   ========================================= */
+
+/* 1. Fondo gris y contenedor de tu columna */
+.column:nth-child(3) { 
+    background-color: #f4f4f7; /* El gris profesional que pediste */
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* 2. Titulo de tu sección */
+.column h2 {
+    color: #1d1d1f;
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 2px solid #f4f4f7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 3. Ajuste de tu lista para que sea "acostada" */
+.Lista-tutoriales {
+    list-style: none; /* Quitamos los puntos */
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Las tarjetas van una debajo de otra */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+/* 4. Cada "Link" se convierte en una tarjeta horizontal (acostada) */
+.Lista-tutoriales li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    min-height: 100px; /* Altura de la tarjeta acostada */
+}
+
+.Lista-tutoriales li a:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 5. Creamos un espacio para la imagen dentro de la tarjeta con CSS */
+/* Como no tienes <img> en el HTML original dentro del <a>, 
+   usaremos un truco de CSS para poner una imagen de fondo a la izquierda */
+.Lista-tutoriales li a::before {
+    content: "";
+    flex: 0 0 120px; /* Ancho de la imagen "acostada" */
+    height: 100px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    margin-right: 15px;
+}
+
+/* Imágenes específicas para cada tutorial (reemplaza con tus fotos) */
+.Lista-tutoriales li:nth-child(1) a::before { background-image: url(/imagenes/iphone\ 17\ 1.png); }
+.Lista-tutoriales li:nth-child(2) a::before { background-image: url(/imagenes/17\ iphone\ 2.png); }
+.Lista-tutoriales li:nth-child(3) a::before { background-image: url(/imagenes/iphone\ 17\ 3.png); }
+
+/* 6. Estilo del texto dentro de la tarjeta */
+.Lista-tutoriales li a {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-right: 15px;
+}
+
+/* 7. Tu botón de "Ver más" */
+.btn-leer-mas {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-leer-mas:hover {
+    background-color: #005bb7;
+}
+
+
+
+/* ESTILOS DE LA SECCION GRID */
+
+/* Estilos para los Grid Items de Argelis */
+.row {
+    margin-top: 35px;
+    display: flex; /* Asegura que se vean alineados */
+    justify-content: space-between;
+    
+}
+
+.card-detalles {
+    background: #ffffff;
+    border: 1px solid #8d8dfe;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+    transition: all 0.3s ease; 
+    height: 70%; 
+}
+
+/* Efecto al pasar el mouse */
+.card-detalles:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #0071e3;
+}
+
+.card-detalles .emoji {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card-detalles h4 {
+    font-size: 1.2rem;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-detalles p {
+    font-size: 0.9rem;
+    color: #6e6e73;
+    line-height: 1.4;
+}
+
+/* Ajuste para que las columnas no se peguen */
+.column1 {
+    padding: 2%;
+}
+
+/* CSS CAMBIOS FOOTHER EDUARDO*/
+
+
+/* Inicio CSS para el Footer*/
+.footer-espacio-tech {
+    width: 100%;
+    min-height: 100px;
+    /* Usamos tu imagen de fondo */
+    /* background: url('/imagenes/footerEspacioTech.png') no-repeat center center; */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Lo posiciona en la parte baja */
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glass-container {
+    background: rgba(13, 17, 23, 0.75); /* Fondo oscuro translúcido */
+    backdrop-filter: blur(12px); /* Efecto de desenfoque del fondo */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px 60px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    width: 50%;
+    max-width: 800px;
+}
+
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+.footer-link {
+    color: #4da6ff; /* Azul tecnológico */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1 rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* Estilos principales del footer (Fondo oscuro tech) */
+.site-footer-v2 {
+    background-color: #0d1117; /* El color oscuro del fondo de tu imagen */
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(77, 166, 255, 0.1);
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Contenedor Flexbox para alinear marca a la izq. y enlaces a la der. */
+.footer-inner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Clave para mover los extremos */
+    align-items: center; /* Alinea verticalmente */
+    flex-wrap: wrap; /* Para móviles */
+    gap: 30px;
+}
+
+/* Estilos para el logo y branding (Izquierda) */
+.footer-branding {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo-img {
+    height: 120px; /* Ajusta el tamaño de tu imagen aquí */
+    width: auto;
+    border-radius: 50%; /* Mantiene la forma circular del logo */
+    border: 2px solid #4da6ff; /* Un sutil anillo azul tech */
+    box-shadow: 0 0 15px rgba(77, 166, 255, 0.3);
+}
+
+.branding-text h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.branding-text p {
+    margin: 5px 0 0;
+    color: #8b949e;
+    font-size: 0.9rem;
+}
+
+/* Innicio Estilos para el Footer */
+.footer-navigation-v2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-navigation-v2 a {
+    color: #4da6ff; /* Azul tecnológico para los links */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.footer-navigation-v2 a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4da6ff; /* Efecto de brillo tech */
+    transform: translateY(-2px);
+}
+
+/* Parte baja del footer (Copyright) */
+.footer-bottom-v2 {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #6e7681;
+    font-size: 0.85rem;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-inner-wrapper {
+        flex-direction: column; /* Apila los elementos */
+        text-align: center;
+    }
+    
+    .footer-branding {
+        flex-direction: column;
+    }
+    
+    .footer-navigation-v2 ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+/* Fin CSS para el Footer*/
+
+.footer-link:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #4da6ff;
+    transform: translateY(-2px);
+}
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(77, 166, 255, 0.5), transparent);
+    margin: 15px 0;
+}
+
+.footer-tag {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .glass-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* CSS DE ROSA */
+/*Estilos para el contenedor*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size:14px ;
+    margin: 0;
+    padding: 0;
+}
+/*Encabezado principal*/
+header {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+/*Columnas flotantes*/
+.column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    padding: 10px;
+    background-color:#e2e2e2;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
 }

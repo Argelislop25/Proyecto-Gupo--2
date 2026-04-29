@@ -469,7 +469,7 @@ header {
     text-align: center;
 }
 /*Columnas flotantes*/
-.column2 {
+.column {
     float: left;
     width: 30%;
     margin: 1.66%;
@@ -477,27 +477,41 @@ header {
     background-color:#f4f4f7;
 }
 
-/*@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
+.img-resena {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media  (max-width: 768px) {
+    .column {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
     }
 }
-*/
-
-
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column; /* Apila los elementos */
-        text-align: center;
-    }
-    
-   .row {
-        flex-direction: column;
-    }
-    
-   .row ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
+.row {
+    overflow: hidden;
+}
+.post img{
+    float: left;
+    width:  50px;
+    margin-right: 10px;
+}
+/* Estilo del pie de imagen */
+.imagen .epigrafe {
+  color: rgb(90, 87, 87);
+  font-size: 13px;
+  font-style: italic;
+}
+.imagen .epigrafe .normal {
+  font-style: normal;
+  color: black
 }

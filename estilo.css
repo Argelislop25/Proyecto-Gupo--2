@@ -259,9 +259,9 @@ header {
 }
 
 .card-detalles p {
-    font-size: 0.9rem;
+    font-size: auto;
     color: #6e6e73;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 /* Ajuste para que las columnas no se peguen */

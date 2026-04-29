@@ -269,15 +269,10 @@ header {
     padding: 10px;
 }
 
-<<<<<<< HEAD
-
-
-
 /* CSS CAMBIOS FOOTHER EDUARDO*/
 
-=======
+
 /* Inicio CSS para el Footer*/
->>>>>>> origin/EduardoRama
 .footer-espacio-tech {
     width: 100%;
     min-height: 400px;
@@ -304,7 +299,7 @@ header {
     max-width: 800px;
 }
 
-<<<<<<< HEAD
+
 .footer-nav {
     display: flex;
     justify-content: center;
@@ -319,7 +314,7 @@ header {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
-=======
+}
 /* Estilos principales del footer (Fondo oscuro tech) */
 .site-footer-v2 {
     background-color: #0d1117; /* El color oscuro del fondo de tu imagen */
@@ -419,11 +414,10 @@ header {
         flex-direction: column;
         gap: 15px;
     }
->>>>>>> origin/EduardoRama
+
 }
 /* Fin CSS para el Footer*/
 
-<<<<<<< HEAD
 .footer-link:hover {
     color: #ffffff;
     text-shadow: 0 0 10px #4da6ff;
